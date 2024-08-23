@@ -1,0 +1,32 @@
+name: HW1 Workflow
+
+on:
+  push: #trigger to allow the workflow to run on push/commit to all branches
+  pull_request: #trigger to allow the workflow to run on all created pull requests
+
+jobs:
+  run-tests:
+    strategy:
+      fail-fast: false # fail-fast==false Strategy dictates that if one action fails, all other strategies won't cascade-fail. By setting this, we can see which versions and which operating systems are failing.
+      matrix:
+        os: [ubuntu-latest,macos-latest, windows-latest] # Labels copied from https://github.com/actions/runner-images
+        python-version: ["3.13"] #you can add other python versions you would like to test with in this list.
+    
+    name: Test
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      -name: Checkout Code
+        uses: actions/checkout@v4 #performs set of actions provided by github at https://github.com/actions/checkout (v4 is latest version as of time of writing this)
+      
+      -name: Setup Python
+        uses: actions/setup-python@v5  #performs set of actions provided by github at https://github.com/actions/setup-python (v5 is latest version as of time of writing this)
+        with:
+          python-version: ${{ matrix.python-version }} #sets up all the python versions mentioned in the `python-version` variable set above in `matrix`
+      
+      -name: Install Dependencies
+        run: python -m pip install pytest .
+
+      -name: Run Tests
+        run: pytest
+
