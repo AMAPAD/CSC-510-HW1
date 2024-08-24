@@ -1,4 +1,4 @@
-name: HW1 Workflow
+name: Testing with Pytest - Workflow For HW1 CSC510
 
 on:
   push: #trigger to allow the workflow to run on push/commit to all branches
