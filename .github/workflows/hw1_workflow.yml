@@ -25,7 +25,7 @@ jobs:
         python-version: ${{ matrix.python-version }} #sets up all the python versions mentioned in the `python-version` variable set above in `matrix`
       
     - name: Install Dependencies
-      run: python -m pip install pytest .
+      run: python -m pip install pytest
 
     - name: Run Tests
       run: pytest
