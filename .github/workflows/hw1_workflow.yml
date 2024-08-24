@@ -26,8 +26,17 @@ jobs:
         allow-prereleases: true #check out https://github.com/actions/setup-python/blob/main/docs/advanced-usage.md#allow-pre-releases
       
     - name: Install Dependencies
-      run: python -m pip install pytest
-
-    - name: Run Tests
-      run: pytest
-
+      run: |  
+        python -m pip install --upgrade pip  
+        if [ -f requirements_dev.txt ]; then pip install -r requirements_dev.txt; fi  
+    - name: Lint with Ruff  
+      run: |  
+        pip install ruff  
+        ruff --format=github --target-version=py310 .
+      continue-on-error: true  
+    - name: Test with pytest  
+      run: |  
+        coverage run -m pytest -v -s
+    - name: Generate Coverage Report  
+      run: |  
+        coverage report -m

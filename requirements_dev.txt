@@ -1,0 +1,7 @@
+#requirements for testing (ie to pass to the github runner during workflow)
+pip:
+    pytest
+    pytest-cov
+    ​​coverage
+    ruff
+    
