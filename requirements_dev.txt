@@ -6,4 +6,4 @@
 
 pytest
 coverage
-coverage_enable_subprocess 1.0
+coverage_enable_subprocess
