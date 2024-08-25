@@ -38,3 +38,7 @@ jobs:
     - name: Generate Coverage Report  
       run: |  
         coverage report -m
+        
+    - name: Coveralls GitHub Action
+      uses: coverallsapp/github-action@v2.3.0
+
