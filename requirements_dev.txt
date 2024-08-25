@@ -1,4 +1,9 @@
 #requirements for testing (ie to pass to the github runner during workflow)
+#pytest-cov Not required cuz its a plugin for pytest that enables subprocesses with Coverage https://youtu.be/sPgvHGkmd0U?si=GZqfY-WfJd__giLB
+#you can use coverage_enable_subprocess 1.0 instead. support for it has been added to pytest by the creator of above youtube video
+#coverage is a very popular mature software for checking code coverage and generating reports
+
+
 pytest
-pytest-cov
 coverage
+coverage_enable_subprocess 1.0
