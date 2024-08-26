@@ -17,6 +17,6 @@ def test_multiplication_correct():
     assert multiply_numbers(2, 3) == 6
 
 
-def test_addition_incorrect():
+def test_multiplication_incorrect():
     """Test that the multiplication function fails with incorrect data."""
     assert multiply_numbers(2, 3) == 4
