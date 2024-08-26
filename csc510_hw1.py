@@ -1,24 +1,23 @@
-class simple_Calculator:
+class SimpleCalculator:
     """A simple calculator class to perform basic arithmetic operations."""
-    
+
     def add_numbers(self, a, b):
         """Add two numbers and return the result."""
         return a + b
+
     def multiply_numbers(self, a, b):
-         """Multiply two numbers and return the result."""
+        """Multiply two numbers and return the result."""
         return a * b
 
 
+# Example usage
 num1 = 5
 num2 = 3
 
+calculator_object = SimpleCalculator()
 
-calculator_Object = simple_Calculator()
+addition_result = calculator_object.add_numbers(num1, num2)
+print(f"The addition of numbers {num1} and {num2} is: {addition_result}")
 
-
-addition_Result = calculator_Object.add_numbers(num1, num2)
-print("The addition of numbers 5 and 3 is: ", addition_Result)
-
-
-multiplication_Result = calculator_Object.multiply_numbers(num1, num2)
-print("The multiplication of numbers 5 and 3 is: ", multiplication_Result)
+multiplication_result = calculator_object.multiply_numbers(num1, num2)
+print(f"The multiplication of numbers {num1} and {num2} is: {multiplication_result}")
