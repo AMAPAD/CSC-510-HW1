@@ -1,10 +1,14 @@
-def add(a, b):
-    return a+b
-    
-def main():
-    a = 5
-    b = 3
-    summation = add(a,b)
-    print(summation)
+def add_numbers(a, b):
+    """Add two numbers and return the result."""
+    return a + b
 
-main()
+
+def main():
+    num1 = 5
+    num2 = 3
+    result = add_numbers(num1, num2)
+    print(result)
+
+
+if __name__ == "__main__":
+    main()
