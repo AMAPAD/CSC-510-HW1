@@ -1,5 +1,5 @@
 # For pytest to work, file names should be of the format *_test.py or test_*.py
-from csc510_hw1 import add_numbers, multiply_numbers
+from csc510_hw1.SimpleCalculator import add_numbers, multiply_numbers
 
 
 def test_addition_correct():
