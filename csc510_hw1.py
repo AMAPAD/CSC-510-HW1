@@ -3,12 +3,7 @@ def add_numbers(a, b):
     return a + b
 
 
-def main():
-    num1 = 5
-    num2 = 3
-    result = add_numbers(num1, num2)
-    print(result)
-
-
-if __name__ == "__main__":
-    main()
+num1 = 5
+num2 = 3
+result = add_numbers(num1, num2)
+print("The addition of numbers 5 and 3 is: ", result)
