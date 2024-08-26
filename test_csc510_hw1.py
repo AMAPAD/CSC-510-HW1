@@ -1,5 +1,4 @@
 # For pytest to work, file names should be of the format *_test.py or test_*.py
-import pytest
 from csc510_hw1 import add_numbers
 
 
