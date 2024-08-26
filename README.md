@@ -1,7 +1,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
-![Python](https://img.shields.io/badge/Python-3.13-blue.svg)
-![Platform](https://img.shields.io/badge/Platform-Linux-blue)
-[![Build Workflow For HW1 CSC510](https://github.com/AMAPAD/CSC-510-HW1/actions/workflows/pytest_workflow_hw1_csc510.yml/badge.svg?branch=main)](https://github.com/AMAPAD/CSC-510-HW1/actions/workflows/pytest_workflow_hw1_csc510.yml)
+[![Python](https://img.shields.io/badge/Python-3.13%2C%203.12-blue.svg)](https://www.python.org)
+![Platform](https://img.shields.io/badge/Platform-Linux%2C%20Windows%2C%20macOS-blue)
+[![Build, Lint and Test](https://github.com/AMAPAD/CSC-510-HW1/actions/workflows/pytest_workflow_hw1_csc510.yml/badge.svg)](https://github.com/AMAPAD/CSC-510-HW1/actions/workflows/pytest_workflow_hw1_csc510.yml)
 [![Coverage Status](https://coveralls.io/repos/github/AMAPAD/CSC-510-HW1/badge.svg?branch=main)](https://coveralls.io/github/AMAPAD/CSC-510-HW1?branch=main)
 ![GitHub Repo Size](https://img.shields.io/github/repo-size/AMAPAD/CSC-510-HW1)
 
