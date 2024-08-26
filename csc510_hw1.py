@@ -1,8 +1,10 @@
-class simple_Calculator():
-    def add_numbers(a, b):
+class simple_Calculator:
+    """A simple calculator class to perform basic arithmetic operations."""
+    
+    def add_numbers(self, a, b):
         """Add two numbers and return the result."""
         return a + b
-    def multiply_numbers(a, b):
+    def multiply_numbers(self, a, b):
          """Multiply two numbers and return the result."""
         return a * b
 
