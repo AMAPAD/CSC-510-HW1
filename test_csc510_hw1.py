@@ -6,6 +6,7 @@ def test_addition_correct():
     """Test that the addition function works correctly."""
     assert add_numbers(2, 3) == 5
 
+
 def test_addition_incorrect():
     """Test that the addition function fails with incorrect data."""
     assert add_numbers(2, 3) == 4
