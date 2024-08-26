@@ -18,3 +18,4 @@ Fall 2024 Software Engineering Course - Homework 1
 * Added **Continous Integration (CI) pipeline** using **Github Actions** and Workflows for a sample python application.
 * Added 1 failing and 1 passing test case using `pytest` and generated **Code Coverage Report** using [`coverage.py`](https://github.com/nedbat/coveragepy) and [`Coveralls`](https://coveralls.io/).
 * Added **Badges** to display the statistics.
+* Linted with [`flake8`](https://flake8.pycqa.org/en/latest/)
