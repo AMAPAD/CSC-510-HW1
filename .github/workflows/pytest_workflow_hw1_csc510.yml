@@ -1,4 +1,4 @@
-name: Test 
+name: Build, Lint and Test 
 
 on:
   push: #trigger to allow the workflow to run on push/commit to all branches
